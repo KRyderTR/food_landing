@@ -27,16 +27,16 @@ const Nav = ({ openNav }: NavProps) => {
   return (
     <div
       className={`transition-all ${
-        navBg ? "bg-white shadow-md" : "fixed"
+        navBg ? "bg-white dark:bg-gray-900 shadow-md" : "fixed"
       } duration-200 h-[12vh] z-[100] fixed w-full`}
     >
       <div className="flex items-center h-full justify-between w-[90%] xl:w-[80%] mx-auto">
         {/* LOGO */}
         <div className="flex items-center space-x-2">
-          <div className="w-10 h-10 bg-blue-950 rounded-full flex items-center justify-center flex-col">
-            <MdDeliveryDining className="w-6 h-6 text-white" />
+          <div className="w-10 h-10 bg-blue-950 dark:bg-white rounded-full flex items-center justify-center flex-col">
+            <MdDeliveryDining className="w-6 h-6 text-white dark:text-black" />
           </div>
-          <h1 className="text-xl hidden sm:block md:text-2xl text-black font-bold">
+          <h1 className="text-xl hidden sm:block md:text-2xl text-black dark:text-white font-bold ">
             Foodie
           </h1>
         </div>
@@ -48,7 +48,7 @@ const Nav = ({ openNav }: NavProps) => {
               <Link
                 key={link.id}
                 href={link.url}
-                className="text-black hover:text-green-700 font-bold transition-all duration-200"
+                className="text-black dark:text-white hover:text-green-700 dark:hover:text-green-400 font-bold transition-all duration-200"
               >
                 <p>{link.Label}</p>
               </Link>
@@ -59,7 +59,7 @@ const Nav = ({ openNav }: NavProps) => {
         {/* Buttons */}
         <div className="flex items-center space-x-4">
           {/* Join now button */}
-          <button className="bg-blue-950 px-8 py-2.5 text-white font-bold rounded-lg hover:bg-black transition-all duration-300 cursor-pointer">
+          <button className="bg-blue-950 dark:bg-white dark:text-black dark:hover:bg-gray-200 px-8 py-2.5 text-white font-bold rounded-lg hover:bg-black transition-all duration-300 cursor-pointer">
             Join Now
           </button>
 
@@ -69,7 +69,7 @@ const Nav = ({ openNav }: NavProps) => {
           {/* Menu Icon */}
           <HiBars3BottomRight
             onClick={openNav}
-            className="w-8 h-8 cursor-pointer text-blue-950 lg:hidden"
+            className="w-8 h-8 cursor-pointer text-blue-950 lg:hidden dark:text-white"
           />
         </div>
       </div>
