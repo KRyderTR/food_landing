@@ -1,0 +1,17 @@
+export const categories = [
+  { name: "Pizza" },
+  { name: "Breakfast" },
+  { name: "Japanese" },
+  { name: "Dessert" },
+  { name: "American" },
+  { name: "Israeli" },
+  { name: "Sushi" },
+  { name: "Greek" },
+  { name: "Thai" },
+  { name: "Vegetarian" },
+  { name: "Italian" },
+  { name: "Mexican" },
+  { name: "Indian" },
+  { name: "Chinese" },
+  { name: "Burgers" },
+];

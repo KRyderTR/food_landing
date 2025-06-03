@@ -29,13 +29,13 @@ const Hero = () => {
                 placeholder="Enter your address"
                 className="flex-1 px-2 text-sm text-black bg-transparent outline-none h-full"
               />
-              <button className="bg-gray-900 text-white px-4 h-full hover:bg-gray-800 flex items-center justify-center cursor-pointer">
+              <button className="bg-gray-900 dark:bg-blue-950 text-white px-4 h-full hover:bg-gray-800 dark:hover:bg-blue-900 flex items-center justify-center cursor-pointer">
                 <FaLocationArrow className="w-4 h-4" />
               </button>
             </div>
           </div>
           {/* Download text */}
-          <p className="text-gray-700 dark:to-gray-400 text-sm mb-6">
+          <p className="text-gray-700 dark:text-gray-400 text-sm mb-6">
             Apps Available to download on
           </p>
           {/* App store button */}
