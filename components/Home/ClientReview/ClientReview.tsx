@@ -38,9 +38,16 @@ const ClientReview = () => {
           autoPlay={true}
           autoPlaySpeed={4000}
         >
-            {reviewsDemo.map((review, index) => (
-                <ReviewCard key={index} reviewTitle={review.reviewTitle} userName={review.userName} userImage={review.userImage} role={review.role} userReview={review.userReview} />
-            ))}
+          {reviewsDemo.map((review, index) => (
+            <ReviewCard
+              key={index}
+              reviewTitle={review.reviewTitle}
+              userName={review.userName}
+              userImage={review.userImage}
+              role={review.role}
+              userReview={review.userReview}
+            />
+          ))}
         </Carousel>
       </div>
     </div>
