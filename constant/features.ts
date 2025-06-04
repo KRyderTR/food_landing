@@ -7,19 +7,19 @@ export const features = [
     },
     {
         id: 2,
-        icon: "/images/f2.svg",
+        icon: "/images/f4.svg",
         title: "Largest People",
                 description: "We are driven beyond just finishing the projects. We want to find smart solutions."
     },
     {
         id: 3,
-        icon: "/images/f3.svg",
+        icon: "/images/f2.svg",
         title: "Wide Coverage Map",
         description: "We are driven beyond just finishing the projects. We want to find smart solutions."
     },
     {
         id: 4,
-        icon: "/images/f4.svg",
+        icon: "/images/f3.svg",
         title: "Artificial Intelligence",
         description: "We are driven beyond just finishing the projects. We want to find smart solutions."
     },
