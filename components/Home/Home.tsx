@@ -5,6 +5,7 @@ import Category from "./Category/Category";
 import HowItWork from "./HowItWork/HowItWork";
 import About from "./About/About";
 import Feature from "./Feature/Feature";
+import ClientReview from "./ClientReview/ClientReview";
 
 const Home = () => {
   return <div className="overflow-hidden">
@@ -14,6 +15,7 @@ const Home = () => {
     <HowItWork />
     <About />
     <Feature />
+    <ClientReview />
   </div>;
 };
 
