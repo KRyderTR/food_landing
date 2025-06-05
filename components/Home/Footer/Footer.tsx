@@ -1,6 +1,5 @@
 import React from "react";
 import {
-  FaDribbble,
   FaFacebook,
   FaFacebookF,
   FaGithub,
