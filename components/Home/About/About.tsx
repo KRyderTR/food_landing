@@ -6,7 +6,7 @@ const About = () => {
     <div className="pt-16 pb-16">
       <div className="w-[80%] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
         {/* Image content */}
-        <div>
+        <div data-aos="fade-right" data-aos-anchor-placement="top-center">
           <Image src="/images/a.png" width={800} height={800} alt="image" />
         </div>
 

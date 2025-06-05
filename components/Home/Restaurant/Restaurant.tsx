@@ -12,8 +12,15 @@ const Restaurant = () => {
       </div>
 
       <div className="w-[80%] mx-auto grid md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-10 mt-14">
-        {demoList.map((data) => (
-          <RestaurantCard key={data.id} image={data.image} title={data.title} />
+        {demoList.map((data, index) => (
+          <div
+            key={data.id}
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-center"
+            data-aos-delay={index * 100}
+          >
+            <RestaurantCard image={data.image} title={data.title} />
+          </div>
         ))}
       </div>
 

@@ -10,8 +10,20 @@ const HowItWork = () => {
       </h1>
 
       <div className="w-[80%] mx-auto mt-16 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10">
-        {howItWorksData.map((data) => (
-            <HowItWorkCard key={data.num} num={data.num} image={data.image} title={data.title} description={data.description} />
+        {howItWorksData.map((data, index) => (
+          <div
+            key={data.num}
+            data-aos="fade-right"
+            data-aos-anchor-placement="top-center"
+            data-aos-delay={index * 100}
+          >
+            <HowItWorkCard
+              num={data.num}
+              image={data.image}
+              title={data.title}
+              description={data.description}
+            />
+          </div>
         ))}
       </div>
     </div>
